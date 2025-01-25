@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen Pokémon TCG</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1>Examen Pokémon TCG</h1>
+        <button onclick="startExam()">Comenzar Examen</button>
+    </div>
+
+    <div id="exam-container" class="hidden">
+        <div class="progress-bar">
+            <div class="progress" style="width: 0%"></div>
+        </div>
+        <div id="question-display"></div>
+        <button onclick="submitAnswer()">Enviar respuesta</button>
+    </div>
+
+    <div id="results-screen" class="hidden">
+        <h2>Resultados</h2>
+        <div id="section-results"></div>
+        <div id="recommendations"></div>
+        <button onclick="location.reload()">Reiniciar Examen</button>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
